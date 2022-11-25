@@ -14,7 +14,7 @@ public class AppConfig {
                         .path("/userdata/**")
                         .uri("http://authentication-service:8085/")
                 ).route(p->p
-                        .path("/userdata/api/**")
+                        .path("/userproduct/api/**")
                         .uri("http://product-service:8081/")
                 ).build();
     }
